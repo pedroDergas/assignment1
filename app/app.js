@@ -1,3 +1,9 @@
+/* created by Pedro da Silva Dergado
+File name: app.js
+Student’s Name: Pedro da Silva Dergado
+StudentID: 301239283
+Date: 09/29/2022
+*/
 // Third-Party Modules
 import express from 'express';
 import cookieParser from 'cookie-parser';
@@ -26,13 +32,13 @@ app.set('view engine', 'ejs');
 
 app.use(logger('dev'));
 app.use(express.json());
-app.use(express.urlencoded({ extended: false}));
+app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
 // app.use(express.static(path.join(__dirname,'/client')));
-app.use(express.static(path.join(__dirname,'../public')));
+app.use(express.static(path.join(__dirname, '../public')));
 app.use(session({
     secret: Secret,
-    saveUninitialized: false, 
+    saveUninitialized: false,
     resave: false
 }));
 

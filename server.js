@@ -1,3 +1,9 @@
+/* created by Pedro da Silva Dergado
+File name: server.js
+Student’s Name: Pedro da Silva Dergado
+StudentID: 301239283
+Date: 09/29/2022
+*/
 import debug from 'debug';
 debug('comp-229');
 import http from 'http';
