@@ -325,3 +325,8 @@ Date: 09/29/2022
     top: 100%;
     left: 0px;
 }
+
+/*PROJECT*/
+.project h1 {
+    text-align: center;
+}
