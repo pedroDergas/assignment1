@@ -9,6 +9,10 @@ Date: 09/29/2022
     text-align: center;
 }
 
+.home div {
+    float: left;
+}
+
 
 
 
@@ -30,7 +34,7 @@ Date: 09/29/2022
     cursor: pointer;
 }
 
-.card:before {
+/*.card:before {
 
     content: "";
     position: absolute;
@@ -60,7 +64,7 @@ Date: 09/29/2022
 
 .about .card:hover::after {
     transform: scaleY(1);
-}
+}*/
 
 
 .about .fonts {
@@ -174,16 +178,13 @@ Date: 09/29/2022
     line-height: 90px;
     margin: 0 auto;
     margin-bottom: 20px;
-    background: #009bb7;
     position: relative;
     z-index: 1;
 }
 
-.services .ser-icon i {
-    font-size: 50px;
-    color: #ffffff;
-    position: relative;
-    z-index: 1;
+.services .ser-icon svg {
+    height: 80px;
+    width: 80px;
 }
 
 .services .services-inner-box h2 {
@@ -253,7 +254,6 @@ Date: 09/29/2022
     background-color: #f2f3f5;
 }
 
-
 /*CONTACT FORM*/
 
 .contact h1,
@@ -261,7 +261,10 @@ Date: 09/29/2022
     text-align: center;
 }
 
-.contact .contact_form {
+.contact .contact_form,
+.about .container,
+.services #services,
+.project .container {
     border: 1px solid #ededed;
     box-shadow: 0 5px 14px rgba(123, 122, 122, 0.895);
     background-color: transparent;
@@ -303,8 +306,12 @@ Date: 09/29/2022
     color: #bcbcbc;
 }
 
-.contact #contact {
-    background: url(images/bg.png) no-repeat center center #f2f3f5;
+.contact #contact,
+.about .container,
+.about .card,
+.project .container,
+.services #services {
+    background: #f2f3f5;
 }
 
 
